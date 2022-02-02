@@ -1,27 +1,33 @@
 import React from 'react';
 import { Button, Col, FormControl, InputGroup, Row, Tab, Tabs } from 'react-bootstrap';
+import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { CgDatabase } from 'react-icons/cg';
+import './medicines.css'
+
 
 export default function Medicines() {
-  return <div>
-       <Row>
-           <p>searhching over database</p>
-           <input type="text" />
-            <Col>
-                <img src="" alt="icon1" />
-                <h3>Title here</h3>
+  return <div  >
+       <Row className='d-flex justify-content-center align-items-center'>
+            <Col xs='10' md='4' className='d-flex align-items-center flex-column text-center medicineCol'>
+                <CgDatabase style={{ fontSize: '70px', color:'lightgray'}}/>
+                <h3 className='py-1'>Title here</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, error ex. Aperiam quisquam neque, eum totam reprehenderit inventore corrupti laboriosam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, error ex. Aperiam 
                 </p>
             </Col>
-            <Col>
-                <img src="" alt="icon" />
-                <h3>Title here</h3>
+            <Col xs='10' md='4' className='d-flex align-items-center flex-column text-center medicineCol '>
+                <BsFillCheckCircleFill style={{ fontSize: '70px', color:'lightgray'}}/>
+                <h3 className='py-2'>Title here</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, error ex. Aperiam quisquam neque, eum totam reprehenderit inventore corrupti laboriosam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, error ex. Aperiam 
                 </p>
             </Col>
 
        </Row>
+           <div >
+                <p>searhching over database</p>
+                <input type="text" />
+           </div>
        <div>
            <div>
                Toxics

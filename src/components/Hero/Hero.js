@@ -1,23 +1,25 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Logo from '../../images/logo.png'
 import Banner from '../../images/banner.png'
-import Style from './hero.module.css'
+import './hero.css'
 
 export default function Hero() {
-  return <div className={Style.container}>
-      <Row>
-          <Col md={4}>
-            <div className={Style.textContainer}>
-                <h1>Bienvenido a Toxifinder</h1>
-                <p>
-                    Para comenzer a utilizer la heramainta dale al boton
-                </p>
-            </div>
-          </Col>
-          <Col md={8} className={Style.imgContainer}>
-            <img className={Style.img} src={Banner} alt="" />
-          </Col>
-      </Row>
+  return <div >
+      <Container>
+          <Row className='d-flex justify-content-around align-items-center  py-5'>
+              <Col xs='6' md='4' className=''>
+                <div className='textContainer'>
+                    <h1>Bienvenido a Toxifinder</h1>
+                    <p>
+                        Para comenzer a utilizer la heramainta dale al boton
+                    </p>
+                </div>
+              </Col>
+              <Col xs='6' md='4' >
+                <img className='img' src={Banner} alt="" />
+              </Col>
+          </Row>
+      </Container>
   </div>;
 }
